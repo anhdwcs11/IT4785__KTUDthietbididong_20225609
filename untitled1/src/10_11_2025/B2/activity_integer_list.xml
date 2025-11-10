@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".IntegerListActivity">
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số nguyên N"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbOdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:checked="true"
+                android:text="Số lẻ" />
+
+            <RadioButton
+                android:id="@+id/rbPrime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Số nguyên tố" />
+
+            <RadioButton
+                android:id="@+id/rbPerfect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số hoàn hảo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbEven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Số chẵn" />
+
+            <RadioButton
+                android:id="@+id/rbSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Số chính phương" />
+
+            <RadioButton
+                android:id="@+id/rbFibonacci"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số Fibonacci" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Không có số nào thỏa mãn"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
