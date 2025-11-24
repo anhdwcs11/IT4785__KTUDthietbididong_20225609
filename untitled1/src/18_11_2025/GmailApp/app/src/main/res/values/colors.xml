@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="avatar_color_1">#FFC107</color>
+    <color name="avatar_color_2">#FF5722</color>
+    <color name="avatar_color_3">#4CAF50</color>
+    <color name="avatar_color_4">#03A9F4</color>
+    <color name="avatar_color_5">#9C27B0</color>
+</resources>
